@@ -1,0 +1,21 @@
+body{
+    background-color:#d4e6f1;
+}
+
+header{
+    text-align:center;
+
+}
+section{
+    width:auto;
+    height:100%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 2px ridge black;
+    background-color:#eaecee;
+    text-align: center;
+}
+a{
+    float: right;
+    padding-left: 5px;
+}

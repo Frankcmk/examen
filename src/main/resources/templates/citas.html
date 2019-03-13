@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="..static/css/cv.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <title>Citas Medicas</title>
+</head>
+
+<br>
+<a href="/principal">CITAS</a>
+<a href="/calendario">CALENDARIO</a>
+
+<body>
+    <header id="principal">
+        <h2 id="titulo">Citas medicas</h2>
+    </header>
+
+    <section>
+        <form   action="/add" method="post">
+            Asunto:
+            <input type="text" name="asunto" autofocus="autofocus" required="required"/>
+            <br> <br>
+            Hora:
+            <input type="time" name="hora" required="required"/>
+            <br><br>
+            Fecha:
+            <input type="date" name="fecha" required="required"/>
+            <br><br>
+            Doctor:
+            <select name="doc">
+                <option
+                    th:each="doc: ${doctores.nombre}"
+                    th:text="${doc}">
+                </option>
+            </select>
+            <br> <br>
+            <input type="submit" value="Nuevo"/>
+
+        </form>
+    </section>
+</body>
+
+</html>
