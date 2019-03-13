@@ -98,7 +98,7 @@ function showCalendar(month, year) {
 
 }
 
-/*function imprimir(asunto, hora, fecha, doctor) {
+function imprimir(asunto, hora, fecha, doctor) {
 
     for(var i = 0; i < jsonCitas.length; i++) {
         var obj = jsonCitas[i];
@@ -111,4 +111,4 @@ function showCalendar(month, year) {
     }
 
 
-}*/
+}
