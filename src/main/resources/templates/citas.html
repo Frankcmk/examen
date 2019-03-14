@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <link href="..static/css/cv.css" th:href="@{/css/style.css}" rel="stylesheet"/>
     <title>Citas Medicas</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 </head>
 
 <br>
-<a href="/principal">CITAS</a>
-<a href="/calendario">CALENDARIO</a>
-
 <body>
     <header id="principal">
         <h2 id="titulo">Citas medicas</h2>
     </header>
+
+    <br>
+    <a href="/principal">CITAS</a>
+    <a href="/calendario">CALENDARIO</a>
+    <br>
 
     <section>
         <form   action="/add" method="post">

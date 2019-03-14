@@ -64,8 +64,8 @@ function showCalendar(month, year) {
             else {
                 let cell = document.createElement("td");
                 console.log("JSON: " + jsonCitas);
-                for(var z = 0; z < jsonCitas.length; z++) {
-                    var obj = jsonCitas[z];
+                for(var z = 0; z < jsonCitas.length; z++) { //Largo de mi arreglo de objetos
+                    var obj = jsonCitas[z]; //Toma el valor de cada objeto de la lista
                     var d = new Date(obj.fechacita);
 
                     if (date == d.getDate() && month == d.getMonth() && year == d.getFullYear()) {
@@ -100,15 +100,6 @@ function showCalendar(month, year) {
 
 function imprimir(asunto, hora, fecha, doctor) {
 
-    for(var i = 0; i < jsonCitas.length; i++) {
-        var obj = jsonCitas[i];
-        if(asunto === obj.asunto && hora === obj.hora && fecha === obj.fecha && doctor === obj.doctor){
-            var d = new Date(obj.fechacita);
-            alert( "Cita el: " + d.getDate() + " de " + d.getMonth() + " del " + d.getFullYear() + " a las "+ d.getHours() +":" + d.getMinutes() + "\n" +
-                "Asunto: " + obj.asunto + "\n" +
-                "Con el doctor: " + obj.doctor);
-        }
-    }
-
+    alert("MSJ:" + asunto + hora + fecha + doctor);
 
 }
